@@ -1,0 +1,145 @@
+<div  id="content" ng-show="!selectedButton || selectedButton === 2" class="cssFade">
+	<img src="images/2.jpg" id="hero">
+	<div id="infosidebar" ng-class="{'moveleft': moveleft}">
+		<div class="minimize" ng-click="moveleft=!moveleft;iconswap=!iconswap;wrapresize=!wrapresize;mainwrapresize=!mainwrapresize"><span class="lnr lnr-chevron-right" aria-hidden="true" ng-class="{'iconswap': iconswap}"></span></div>
+			<li ng-click="selectedPanel = 1" ng-init="selectedPanel" class="cssFade about" ng-class="{'active': selectedPanel == 1}">About</li>
+			<li ng-click="selectedPanel = 2" ng-init="none" class="cssFade features" ng-class="{'active': selectedPanel == 2}" >Features</li>
+			<li ng-click="selectedPanel = 3" ng-init="none" class="cssFade demo" ng-class="{'active': selectedPanel == 3}">Example</li>
+			<li ng-click="selectedPanel = 4" ng-init="none" class="cssFade cog" ng-class="{'active': selectedPanel == 4}">Customisation</span></li>
+	</div>
+	<div class="contentwrap">
+	<div ng-show="!selectedPanel || selectedPanel === 1" class="cssFade">
+		<div class="whitewrap" ng-class="{'mainwrapresize': mainwrapresize}">
+		<h1>RCC Emerging Layer Banner</h1>
+		<div class="left">
+		<img src="images/elb.png">
+		<p>The Dynamic Pricing banner was originally designed to be served in a popup window within the booking process however displaying it as a static banner is perfectly acceptable.</p>
+		<p>The Dynamic pricing banner main functionality is to display a daily car rental price based on what our customers have found within the last 2 weeks. This is a cached price that is pulled in from our server.</p> 
+		<p>An airport IATA code can be feed in via a parameter in the URL, the name of the airport will be displayed in a sales message. We recommend displaying the pricing banner on the confirmation page of a flight or hotels booking process so that the IATA code can be dynamically feed in. This will insure the displayed car rental pricing is relevant to customer and increase conversion rates.</p>
+		</div>
+		<div class="right" ng-class="{'wrapresize': wrapresize}">
+		
+				<div class="card">
+					<div class="widget">
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				</div>
+		</div>
+		<div ng-show="!selectedPanel || selectedPanel === 2" class="cssFade">
+	<div class="whitewrap" ng-class="{'mainwrapresize': mainwrapresize}">
+	<h1>Emerging Layer Banner Features</h1>
+	<p>The .</p>
+	<ul>
+        <li>A Daily pricing is displayed from the supplied IATA code based on what prices our customers have found in the last 2 weeks. Pricing is pulled from our cache so there’s no live search and display is instant.</li>
+         <li>The IATA code is used to display Dynamic text in the main sales message making it more relevant to the customer.</li>
+        <li>Simple styling changes can be done be changing a parameter in the URL. Option to change the background image based on the location i.e. beach, city, road. Custom images can be added for key affiliates.</li>
+        <li>White label options are available, with a complete restyle and click through to a sub-domain for key affiliates.</li>
+        <li>Responsive Design which will adept to fill the available space. Making it suitable for mobile devices </li>
+     </ul>
+     </div>
+</div>
+
+
+<div ng-show="!selectedPanel || selectedPanel === 3" class="cssFade">
+<div class="whitewrap" ng-class="{'mainwrapresize': mainwrapresize}">
+<h1>Example</h1>
+ <code>
+&lt;iframe scrolling="no" src="https://secure.rentalcars.com/ELBanner.do?iataCode=MAN&display=shoal&affiliateCode=rentalcars&puDay=2&puMonth=4&puYear=2016&puHour=12&puMinute=15&doDay=8&doMonth=14&doYear=2016&doHour=12&doMinute=15&driversAge=25&preflang=en&serverName=www.rentalcars.com" frameborder="0" height="500" width="100%"></iframe>
+</code> 
+</div>
+<div class="whitewrap" ng-class="{'mainwrapresize': mainwrapresize}">
+<span class="lnr lnr-arrow-left"></span>
+<h4><span class="responsive"></span> Resize the page to make responsive</h4>
+	<iframe scrolling="no" src="https://secure.rentalcars.com/ELBanner.do?iataCode=MAN&display=shoal&affiliateCode=rentalcars&puDay=2&puMonth=4&puYear=2016&puHour=12&puMinute=15&doDay=8&doMonth=14&doYear=2016&doHour=12&doMinute=15&driversAge=25&preflang=en&serverName=www.rentalcars.com" frameborder="0" height="350" width="100%"></iframe>
+	</div>
+</div>
+<div ng-show="!selectedPanel || selectedPanel === 4" class="cssFade">
+<div class="whitewrap" ng-class="{'mainwrapresize': mainwrapresize}">
+	<h1>Emerging Layer Banner Customisation</h1>
+	<p>To customise the ELB you will be able to change dates, times, languages etc.. by inputting certain paramiters into the banners url.</p>
+<div class="col2 left">
+	<div class="customcontainer">
+		<h3><span class="affcode"></span> Affiliate Code</h3>
+		<p>Specifies to the widget the correct affiliate</p>
+		<code>&affiliateCode=company</code>
+	</div>
+	<div class="customcontainer">
+		<h3><span class="lang"></span>Language</h3>
+		<p>The language to which to widget will display</p>
+		<code>&preflang=en</code>
+	</div>
+	<div class="customcontainer">
+		<h3><span class="location"></span>Pickup location</h3>
+		<p>The 3 letter IATA code which specifies the destination</p>
+		<code>&iataCode=MAN</code>
+	</div>
+	<div class="customcontainer">
+		<h3><span class="date"></span>Pickup year</h3>
+		<p>Specify the pickup year</p>
+		<code>&puYear=2016</code>
+	</div>
+	<div class="customcontainer">
+		<h3><span class="time"></span>Pickup Hour</h3>
+		<p>Specify the pickup hour</p>
+		<code>&puHour=12</code>
+	</div>
+	<div class="customcontainer">
+		<h3><span class="time"></span>Return Hour</h3>
+		<p>Specify the return hour</p>
+		<code>&doHour=10</code>
+	</div>
+	<div class="customcontainer">
+		<h3><span class="photo"></span>Background Image</h3>
+		<p>The display parameter is used to set the background image of the banner.</p>
+		<code>&display=airport</code>
+	</div>
+	<div class="customcontainer">
+		<h3><span class="location"></span>Sub-domain</h3>
+		<p>Specify a sub-domain for the search results to appear via</p>
+		<code>&forwardUrl=carrentals.reservations.com</code>
+	</div>
+</div>
+<div class="col2 right">
+	<div class="customcontainer">
+		<h3><span class="currency"></span>Currency preference</h3>
+		<p>The currency in which you want to display</p>
+		<code>&prefcurrency=GBP</code>
+	</div>
+	<div class="customcontainer">
+		<h3><span class="date"></span>Pickup date</h3>
+		<span class="lnr lnr-clock"></span><p>Specify the pickup date</p>
+		<code>&puDay=6</code>
+	</div>
+	<div class="customcontainer">
+		<h3><span class="date"></span>Pickup month</h3>
+		<p>Specify the pickup month</p>
+		<code>&puMonth=10</code>
+	</div>
+	<div class="customcontainer">
+		<h3><span class="date"></span>Return date</h3>
+		<p>Specify the return date</p>
+		<code>&doDay=14</code>
+	</div>
+	<div class="customcontainer">
+		<h3><span class="time"></span>Pickup Minute</h3>
+		<p>Specify the pickup Minute</p>
+		<code>&puMinute=12</code>
+	</div>
+	<div class="customcontainer">
+		<h3><span class="time"></span>Return Minute</h3>
+		<p>Specify the return minute</p>
+		<code>&doMinute=10</code>
+	</div>
+	<div class="customcontainer">
+		<h3><span class="affcode"></span>Secure Domain</h3>
+		<p>This attribute is only required if the banner is being served via the secure domain</p>
+		<code>&serverName=www.rentalcars.com</code>
+	</div>
+</div>
+<div class="clear"></div>
+
+		</div>
+		</div>
+</div>

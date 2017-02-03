@@ -1,0 +1,56 @@
+html,body { 
+	height: 100%;
+}
+
+body {
+	background: url(../images/bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: visible;
+}
+
+p {
+	font-size: 15px;
+	line-height: 28px;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+h4 {
+	font-size: 16px;
+}
+
+.wrap {
+	padding: 0px 30px;
+}
+
+.left {
+	float:left;
+	width: 50%;
+	padding-right: 50px;
+}
+
+.right {
+	float: right;
+	width: 50%;
+	-webkit-transition: all 1s ease-in-out;
+	 -moz-transition: all 1s ease-in-out;
+	  -o-transition: all 1s ease-in-out;
+	  transition: all 1s ease-in-out;
+}
+
+.clear {
+	clear: both;
+}
+
+code {
+	word-wrap: break-word;
+}
+
+.col2 {
+	width: calc(95%/2);
+	padding: 10px;
+	float: left;
+}

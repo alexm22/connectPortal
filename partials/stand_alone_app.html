@@ -1,0 +1,38 @@
+<div  id="content" ng-show="!selectedButton || selectedButton === 4" class="cssFade">
+	<img src="images/1.jpg" id="hero">
+
+<div id="infosidebar" ng-class="{'moveleft': moveleft}">
+		<div class="minimize" ng-click="moveleft=!moveleft;iconswap=!iconswap;wrapresize=!wrapresize;mainwrapresize=!mainwrapresize"><span class="lnr lnr-chevron-right" aria-hidden="true" ng-class="{'iconswap': iconswap}"></span></div>
+			<li ng-click="selectedPanel = 1" ng-init="selectedPanel" class="cssFade about" ng-class="{'active': selectedPanel == 1}">About</li>
+			<li ng-click="selectedPanel = 2" ng-init="none" class="cssFade features" ng-class="{'active': selectedPanel == 2}" >Features</li>
+			<li ng-click="selectedPanel = 3" ng-init="none" class="cssFade demo" ng-class="{'active': selectedPanel == 3}">Example</li>
+			<li ng-click="selectedPanel = 4" ng-init="none" class="cssFade cog" ng-class="{'active': selectedPanel == 4}">Customisation</span></li>
+</div>
+<div class="contentwrap">
+	<div ng-show="!selectedPanel || selectedPanel === 1" class="cssFade">
+		<div class="whitewrap" ng-class="{'mainwrapresize': mainwrapresize}">
+		<h1>Stand Alone Booking Engine App</h1>
+		<p>The Dynamic Pricing banner was originally designed to be served in a popup window within the booking process however displaying it as a static banner is perfectly acceptable.</p>
+		<p>The stand alone booking engine can be generated in two custom styles;</p> 
+		<div class="left">
+		<p><span class="saa"></span><strong>Standard Booking Engine</strong></p>
+		<p>Our Standard styled booking engine is perfect to fit in any space you have designated. Ideally this would be placed in a tabbed module but this can be placed anywhere on a page.</p> 
+		<p>In terms of custimisation you are able to edit the engines primary button/calender colour, border radius, font colours and box shadows</p>
+		<p><span class="saa"></span><strong>Extended Booking Engine</strong></p>
+		<p>The extended booking engine would be more suitable for a larger space or a full html page. Along with the booking engine extra modules are displayed includng suppliers, a hero image, my booking section and popular usp's.</p>
+		<p>In terms of customisation the same properties as the standard booking engine applies, primary colours can be chnaged including any background colours of the modules, you are also able to hide any of the modues you require, enabling you to have only the parts of the engine you require for you page. 
+		</div>
+		<div class="right" ng-class="{'wrapresize': wrapresize}">
+		
+				<div class="card">
+					<div class="widget">
+						<img src="images/standaa.png" class="saai">
+						<img src="images/standaaf.png" class="saai">
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				</div>
+		</div>
+	</div>
+	</div>

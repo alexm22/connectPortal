@@ -1,0 +1,118 @@
+//*************ICONS**************//
+$primary-orange: #ff7b33;
+/****features****/
+.whitewrap li:before {
+	content: "\e959";
+	font-family: 'Linearicons';
+	display: inline-block;
+	width: 1.3em; /* same as padding-left set on li */
+	color: $primary-orange;
+}
+/****star****/
+.whitewrap .left li::before {
+    content: "\e68d";
+    font-family: 'Linearicons';
+    display: inline-block;
+    width: 1.3em;
+    color: #ff7b33;
+    margin-left: -19px;
+}
+/****arrow-left****/
+.lnr-chevron-right::before {
+    content: "\e943";
+    font-family: 'Linearicons';
+    color: white;
+}
+/****arrow-right****/
+.iconswap:before {
+	content:"\e944" !important;
+	font-family: 'Linearicons';
+	color: white;
+}
+/****about****/
+.about:before {
+	content:"\e7da";
+	float: right;
+	font-family: 'Linearicons';
+}
+/****features****/
+.features:before {
+	content: "\e92c";
+	float: right;
+	font-family: 'Linearicons';
+}
+/****demo****/
+.demo:before {
+	content: "\e7af";
+	float: right;
+	font-family: 'Linearicons';
+}
+/****example****/
+.cog:before {
+	content: "\e676";
+	float: right;
+	font-family: 'Linearicons';
+}
+/****affcode****/
+.affcode:before {
+	content: "\e90c";
+	font-family: 'Linearicons';
+}
+/****preflang****/
+.lang:before {
+	content: "\e691";
+	font-family: 'Linearicons';
+}
+/****pickup location****/
+.location:before {
+	content: "\e84a";
+	font-family: 'Linearicons';
+}
+/****dates****/
+.date:before {
+	content: "\e788";
+	font-family: 'Linearicons';
+}
+/****currency****/
+.currency:before {
+	content: "\e763";
+	font-family: 'Linearicons';
+}
+/****time****/
+.time:before {
+	content: "\e8e7";
+	font-family: 'Linearicons';
+}
+
+/****resize****/
+.responsive:before {
+	content: "\e952";
+	font-family: 'Linearicons';
+}
+
+.photo:before {
+	content: "\e70f";
+	font-family: 'Linearicons';
+}
+
+.inttypes:before {
+	content: "\e7ae";
+	font-family: 'Linearicons';
+}
+
+.selfserv:before {
+	content: "\e62e";
+	font-family: 'Linearicons';
+}
+
+.colorchange:before {
+	content: "\e626";
+	font-family: 'Linearicons';
+}
+
+.saa:before {
+	content: "\e7ae";
+	font-family: 'Linearicons';
+	color: $primary-orange;
+	padding-right: 10px;
+}

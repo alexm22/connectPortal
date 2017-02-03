@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+    <link rel='shortcut icon' href='http://cdn.rcstatic.com/images/rclogo/blue/logomark-rclogo_32x32.png' type='image/x-icon'/ >
+    <title>RCC Portal</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body ng-app="portalApp">
+	<div ng-controller="MainController">
+	<div id="mainwrap">
+	<div id="head">
+	</div>
+	<div id="sidebar">
+		<div class="logo">
+				<img src="images/rcclogo.png">
+		</div>
+			<li><h1><span class="inttypes"></span>Integration Types</h1></li>
+			<ul>
+				<li ng-click="hidebuttons(); selectedButton = 1; selectedPanel = 1" ng-init="none" class="cssFade" ng-class="{'active': selectedPanel == 1}">RC Widget</li>
+				<li ng-click="hidebuttons(); selectedButton = 2; selectedPanel = 2" ng-init="none" class="cssFade" ng-class="{'active': selectedPanel == 2}">Emerging Layer Banner</li>
+				<li ng-click="hidebuttons(); selectedButton = 3; selectedPanel = 3" ng-init="none" class="cssFade" ng-class="{'active': selectedPanel == 3}">Dynamic Location Banner</li>
+				<li ng-click="showSae = ! showSae" class="cssFade">Stand Alone Engine</li>
+					<ul ng-show="showSae" id="submenu" class="cssFade">
+						<li ng-click="hidebuttons(); selectedButton = 4; selectedPanel = 4" ng-init="none" class="cssFade" ng-class="{'active': selectedPanel == 4}">Stand Alone App</li>
+						<li ng-click="hidebuttons(); selectedButton = 5; selectedPanel = 5" ng-init="none" class="cssFade" ng-class="{'active': selectedPanel == 5}">Stand Alone Inline</li>
+					</ul>
+			</ul>
+			<li><h1><span class="selfserv"></span>Self Service Area</h1></li>
+			<ul>
+				<li>Stand Alone Booking Engine</li>
+				<li>Landing Page Builder</li>
+				<li>Banner Gallery</li>
+			</ul>
+	</div>
+			<ng-include src="'partials/elb.html'"></ng-include>
+			<ng-include src="'partials/widget.html'"></ng-include>
+			<ng-include src="'partials/dynamic_location.html'"></ng-include>
+			<ng-include src="'partials/stand_alone_app.html'"></ng-include>
+	</div>
+	<h1 class="main">RCC Portal</h1>
+	</div>
+</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-animate.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+</html>
